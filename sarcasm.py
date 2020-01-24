@@ -7,10 +7,11 @@ def formatMessage(message):
         for char in word:
             cap = random.randrange(2)
             if cap == 0:
-                print(char.lower(), end='')
+                sarcastic += char.lower()
             else:
-                print(char.upper(), end='')
-        print(" ", end='')
+                sarcastic += char.upper()
+        sarcastic += " "
+    print(sarcastic)
 
 if __name__ == "__main__":
     import sys
